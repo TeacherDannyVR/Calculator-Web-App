@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=600, height=600, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="styles.css">
+  <title>MRBD Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Calculator Title -->
+    <h1 id="appTitle" class="title heading">CALCULATOR</h1>
+    
+    <!-- Calculator Display -->
+    <div class="calc-display">
+      <div id="calcExpression" class="calc-expression">0</div>
+      <div id="calcResult" class="calc-result">0</div>
+    </div>
+    
+    <!-- Calculator Button Grid -->
+    <div class="calc-grid">
+      <!-- Row 1: Clear and Operations -->
+      <button id="btnClear" class="focusable calc-btn clear-btn">C</button>
+      <button id="btnDivide" class="focusable calc-btn op-btn">÷</button>
+      <button id="btnMultiply" class="focusable calc-btn op-btn">×</button>
+      <button id="btnDelete" class="focusable calc-btn del-btn">⌫</button>
+      
+      <!-- Row 2: 7, 8, 9, - -->
+      <button id="btn7" class="focusable calc-btn num-btn">7</button>
+      <button id="btn8" class="focusable calc-btn num-btn">8</button>
+      <button id="btn9" class="focusable calc-btn num-btn">9</button>
+      <button id="btnSubtract" class="focusable calc-btn op-btn">−</button>
+      
+      <!-- Row 3: 4, 5, 6, + -->
+      <button id="btn4" class="focusable calc-btn num-btn">4</button>
+      <button id="btn5" class="focusable calc-btn num-btn">5</button>
+      <button id="btn6" class="focusable calc-btn num-btn">6</button>
+      <button id="btnAdd" class="focusable calc-btn op-btn">+</button>
+      
+      <!-- Row 4: 1, 2, 3 -->
+      <button id="btn1" class="focusable calc-btn num-btn">1</button>
+      <button id="btn2" class="focusable calc-btn num-btn">2</button>
+      <button id="btn3" class="focusable calc-btn num-btn">3</button>
+      <button id="btnEquals" class="focusable calc-btn equals-btn" style="grid-row: span 2;">=</button>
+      
+      <!-- Row 5: 0, . -->
+      <button id="btn0" class="focusable calc-btn num-btn" style="grid-column: span 2;">0</button>
+      <button id="btnDecimal" class="focusable calc-btn num-btn">.</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
